@@ -5,6 +5,21 @@
 **Final build:** Build 18  
 **Final decision:** Go for simulated release
 
+## Visual Release Summary
+
+Build 17 was blocked after five defects were documented. Build 18 received a go recommendation after all five corrections were verified and nine retests passed with no newly observed issues.
+
+<table>
+  <tr>
+    <th>Build 18 - iOS validation</th>
+    <th>Build 18 - Android validation</th>
+  </tr>
+  <tr>
+    <td><img src="assets/build18-ios-home.png" alt="Build 18 home screen validated in the iOS simulator" width="420"></td>
+    <td><img src="assets/build18-android-home.png" alt="Build 18 home screen validated in the Android Pixel 11 Pro simulator" width="420"></td>
+  </tr>
+</table>
+
 ## Live Project
 
 - [Open the working Build 18 demo in Expo Snack](https://snack.expo.dev/@benitezb/pinehaven-mobile-demo---build-18)
@@ -53,6 +68,34 @@ The primary focus is operational execution, quality assurance, technical communi
 | DEF-004 | Account masks and separators displayed corrupted characters | Medium | Closed after retest |
 | DEF-005 | Android header and navigation overlapped system controls | High | Closed after retest |
 
+### Selected Before-and-After Evidence
+
+#### DEF-001 - Deposit filter correction
+
+<table>
+  <tr>
+    <th>Build 17 - Failed</th>
+    <th>Build 18 - Verified</th>
+  </tr>
+  <tr>
+    <td><img src="assets/build17-ios-deposits.png" alt="Build 17 deposit filter showing only two results" width="360"></td>
+    <td><img src="assets/build18-ios-deposits.png" alt="Build 18 deposit filter showing all three expected results" width="520"></td>
+  </tr>
+</table>
+
+#### DEF-003 - Large-text accessibility correction
+
+<table>
+  <tr>
+    <th>Build 17 - Failed</th>
+    <th>Build 18 - Verified</th>
+  </tr>
+  <tr>
+    <td><img src="assets/build17-ios-large-text.png" alt="Build 17 large-text mode with clipped descriptions" width="360"></td>
+    <td><img src="assets/build18-ios-large-text.png" alt="Build 18 large-text mode with fully readable descriptions" width="520"></td>
+  </tr>
+</table>
+
 ## Testing Environments
 
 | Platform | Environment | Coverage |
@@ -84,6 +127,12 @@ Physical Android hardware testing was not available. Android results are limited
 - [GitHub Release Board](https://github.com/users/brandonbenitezg-ux/projects/1/views/1)
 - [Build 18 Source](./App.js)
 - [Live Build 18 Demo](https://snack.expo.dev/@benitezb/pinehaven-mobile-demo---build-18)
+
+## Release Tracking Board
+
+The board shows the release moving through scope confirmation, Build 17 testing, Build 18 verification, and client-documentation completion.
+
+![Completed Pinehaven release tracking board](assets/release-board.png)
 
 ## Connection to Mobile App Operations Work
 
