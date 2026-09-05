@@ -1,106 +1,124 @@
 # Mobile Banking Release Operations Case Study
 
-**Project status:** In progress
+**Status:** Complete  
+**Release:** Pinehaven Mobile Demo 1.1.0  
+**Final build:** Build 18  
+**Final decision:** Go for simulated release
 
-## Project Overview
+## Live Project
 
-This project is a simulated mobile app release assignment created to demonstrate the work performed in an entry-level mobile app operations role.
+- [Open the working Build 18 demo in Expo Snack](https://snack.expo.dev/@benitezb/pinehaven-mobile-demo---build-18)
+- [View the release tracking board](https://github.com/users/brandonbenitezg-ux/projects/1/views/1)
+- [Review the corrected Build 18 source](./App.js)
 
-The project follows a fictional credit union's mobile app update from initial build intake through quality assurance testing, defect resolution, release preparation, client communication, and post-release documentation.
+## Executive Summary
 
-The primary focus is release coordination and operational execution, not software development.
+This project simulates the work of an entry-level Mobile App Operations Associate managing a fictional credit union app update from initial scope review through release readiness.
 
-## Important Disclaimer
+I reviewed an incomplete release request, documented the missing requirements, tested the initial build across multiple environments, identified five defects, issued a no-go recommendation, verified the corrected build, and prepared a client-facing guide for resolving an Apple developer-account agreement blocker.
 
-Pinehaven Community Credit Union is a fictional organization created exclusively for this portfolio project.
+The primary focus is operational execution, quality assurance, technical communication, issue tracking, and follow-through rather than software development.
 
-This project is not connected to a real credit union, financial institution, customer, or employer. The demonstration application does not connect to real bank accounts, process transactions, collect personal information, or provide financial services.
+## Results at a Glance
 
-Any client messages, account records, release documents, test results, and financial information shown in this project are fictional.
+| Measure | Build 17 | Build 18 |
+|---|---:|---:|
+| Release decision | No-go | Go for simulated release |
+| Initial test cases | 15 | Not applicable |
+| Initial tests passed | 9 | Not applicable |
+| Initial requirements failed | 6 | Not applicable |
+| Defects open | 5 | 0 |
+| Retests passed | Not applicable | 9 of 9 |
+| New problems observed during regression | Not applicable | 0 |
 
-Store-submission activities that require paid Apple or Google developer accounts will be clearly identified as simulations. They will not be presented as real store submissions.
+## Release Story
 
-## Scenario
+1. Reviewed the release brief before testing.
+2. Identified missing information about platform coverage, test data, acceptance criteria, approval authority, release method, and developer-account status.
+3. Documented the clarified scope and measurable approval requirements.
+4. Tested Build 17 using iOS and Android previews plus a physical iPhone through Expo Go.
+5. Identified five defects affecting filtering, preference persistence, accessibility, text rendering, and Android safe areas.
+6. Recommended no-go for Build 17 because four high-severity defects remained open.
+7. Retested each correction in Build 18 and repeated the core regression checks.
+8. Confirmed that all nine Build 18 retests passed with no newly observed problem.
+9. Recommended Build 18 for simulated release while clearly documenting the remaining test limitations.
 
-Pinehaven Community Credit Union is preparing its scheduled quarterly mobile app update.
+## Defects Identified in Build 17
 
-The fictional update is designated version 1.1.0 and includes improvements to transaction filtering, notification preferences, accessibility, and general app reliability.
+| ID | Defect | Severity | Build 18 Result |
+|---|---|---|---|
+| DEF-001 | Deposit filter omitted Mobile Check Deposit | High | Closed after retest |
+| DEF-002 | Notification preference reset after restart | High | Closed after retest |
+| DEF-003 | Large text clipped Settings descriptions | High | Closed after retest |
+| DEF-004 | Account masks and separators displayed corrupted characters | Medium | Closed after retest |
+| DEF-005 | Android header and navigation overlapped system controls | High | Closed after retest |
 
-An initial test build contains several defects that must be identified, documented, corrected, and retested before the update can be approved for release.
+## Testing Environments
 
-For this simulation, I am responsible for coordinating the operational release process from build intake through final release readiness.
+| Platform | Environment | Coverage |
+|---|---|---|
+| iOS | Expo Snack preview | Functional, visual, accessibility, and persistence testing |
+| Android | Expo Snack Pixel 11 Pro preview | Functional, visual, accessibility, and safe-area testing |
+| iPhone | Physical device through Expo Go | Core navigation, filtering, accessibility, and persistence validation |
 
-## Simulated Responsibilities
+Physical Android hardware testing was not available. Android results are limited to the Expo Snack preview and are not represented as physical-device validation.
 
-My responsibilities in this project include:
+## Evidence and Documentation
 
-- Reviewing the release request and confirming the expected scope
-- Checking simulated developer-account and compliance requirements
-- Creating and executing a mobile app quality assurance test plan
-- Testing the app on supported devices
-- Documenting defects with clear reproduction steps and supporting evidence
-- Tracking open problems through correction and retesting
-- Making a documented release-readiness recommendation
-- Preparing store-submission information and release notes
-- Communicating timelines, problems, and status updates to a fictional client
-- Creating instructions for resolving recurring account or submission problems
-- Completing a post-release review and recommending process improvements
+### Release Planning
 
-## Planned Project Evidence
+- [Mobile App Release Brief](./01-scenario/release-brief.md)
+- [Release Scope Clarification Response](./01-scenario/scope-clarification-response.md)
 
-The completed case study will include:
+### Quality Assurance
 
-- Release intake brief
-- Developer-account status review
-- Release schedule
-- Quality assurance test plan
-- Completed test results
-- Defect reports
-- Screenshots and testing evidence
-- Release-readiness decision
-- Store-submission checklist
-- Release notes
-- Client status communications
-- Troubleshooting reference guide
-- Post-release retrospective
-- Final case-study summary
+- [Build 17 Test Report and No-Go Decision](./02-quality-assurance/build-17-test-report.md)
+- [Build 18 Retest and Release Readiness Report](./02-quality-assurance/build-18-retest-report.md)
 
-## Tools
+### Client Guidance
 
-The project will use:
+- [Resolving an Updated Apple Developer Agreement](./03-client-guidance/apple-agreement-resolution-guide.md)
 
-- React Native and Expo for the demonstration mobile app
-- Expo Go for testing on an iPhone
-- GitHub for project files and version history
-- GitHub Issues and Projects for task and defect tracking
-- Microsoft Word or Google Docs for operational documentation
+### Tracking and Application
 
-All tools used for this project will be available at no cost.
+- [GitHub Release Board](https://github.com/users/brandonbenitezg-ux/projects/1/views/1)
+- [Build 18 Source](./App.js)
+- [Live Build 18 Demo](https://snack.expo.dev/@benitezb/pinehaven-mobile-demo---build-18)
 
-## Skills Demonstrated
+## Connection to Mobile App Operations Work
 
-This project is intended to demonstrate:
+| Responsibility | Project Evidence |
+|---|---|
+| Review and organize release requirements | Release brief and clarification response |
+| Track open work through resolution | Public GitHub Project board and issue history |
+| Test app builds before release | Build 17 test report and supporting screenshots |
+| Document defects clearly | Expected results, actual results, severity, environment, and release impact |
+| Verify corrected builds | Build 18 defect retest and regression results |
+| Make release-readiness decisions | Documented Build 17 no-go and Build 18 go recommendations |
+| Explain account actions to a client | Apple developer-agreement resolution guide |
+| Maintain accurate reference material | Structured repository documentation and source history |
+| Communicate limitations honestly | Explicit physical-device and app-store access limitations |
 
-- Attention to detail
-- Mobile app quality assurance
-- Release coordination
-- Defect documentation
-- Deadline tracking
-- Technical communication
-- Customer-focused problem solving
-- Process documentation
-- Follow-through
-- Ability to learn unfamiliar platforms and tools
+## Tools Used
 
-## Current Progress
+- Expo Snack
+- Expo Go
+- React Native
+- GitHub repositories
+- GitHub Issues and Projects
+- iOS and Android preview environments
+- Physical iPhone testing
 
-- [x] Project repository created
-- [x] Project scenario defined
-- [ ] Release requirements documented
-- [ ] Project tracking board created
-- [ ] Demonstration app created
-- [ ] Initial build tested
-- [ ] Defects documented
-- [ ] Corrected build retested
-- [ ] Release documentation completed
-- [ ] Final case study published
+## Project Limitations
+
+- No paid Apple or Google developer account was used.
+- App Store Connect and Google Play Console submission activities were not performed.
+- Store submission, review, approval, and production release remain simulated.
+- Physical Android testing was not performed.
+- The app uses fictional local data and does not connect to real financial services.
+
+A real production release would require signed builds, authorized developer-account access, platform compliance review, physical Android coverage, store submission, reviewer-response handling, and controlled production distribution.
+
+## Disclaimer
+
+Pinehaven Community Credit Union and every person, account, balance, transaction, communication, and release record in this repository are fictional. This independent portfolio project is not connected to a real financial institution, employer, client, Apple developer account, or Google Play developer account. It does not collect personal information or process financial transactions.
