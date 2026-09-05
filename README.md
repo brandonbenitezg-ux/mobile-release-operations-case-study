@@ -78,7 +78,7 @@ The primary focus is operational execution, quality assurance, technical communi
     <th>Build 18 - Verified</th>
   </tr>
   <tr>
-    <td><img src="assets/build17-ios-deposits.png" alt="Build 17 deposit filter showing only two results" width="360"></td>
+    <td><img src="assets/build17-ios-deposits.png" alt="Build 17 deposit filter showing only two results" width="180"></td>
     <td><img src="assets/build18-ios-deposits.png" alt="Build 18 deposit filter showing all three expected results" width="520"></td>
   </tr>
 </table>
@@ -91,7 +91,7 @@ The primary focus is operational execution, quality assurance, technical communi
     <th>Build 18 - Verified</th>
   </tr>
   <tr>
-    <td><img src="assets/build17-ios-large-text.png" alt="Build 17 large-text mode with clipped descriptions" width="360"></td>
+    <td><img src="assets/build17-ios-large-text.png" alt="Build 17 large-text mode with clipped descriptions" width="180"></td>
     <td><img src="assets/build18-ios-large-text.png" alt="Build 18 large-text mode with fully readable descriptions" width="520"></td>
   </tr>
 </table>
